@@ -38,6 +38,8 @@ class User extends Password{
 
 		$hashed = $this->get_user_hash($username);
 		
+// bang add code here
+
 		if($this->password_verify($password,$hashed) == 1){
 		    
 		    $_SESSION['loggedin'] = true;
